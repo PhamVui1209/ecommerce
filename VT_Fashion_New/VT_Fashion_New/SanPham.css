@@ -1,0 +1,107 @@
+﻿.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border: 1px solid var(--bluedark);
+    /* flex:1 1 30rem; */
+    width: 450px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .box .hover {
+        position: absolute;
+        width: 450px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.568);
+        text-align: center;
+        /* margin-left: -1000px; */
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+        .box .hover a {
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 15px 15px;
+            background: var(--blue);
+            color: #666;
+            margin: 200px;
+            margin-top: 100px;
+            opacity: 0;
+        }
+
+            .box .hover a:hover {
+                color: var(--pink);
+                transform: scale(1.2);
+            }
+
+    .box:hover .hover {
+        opacity: 1;
+        transition: .5s;
+    }
+
+        .box:hover .hover a {
+            margin: 10px;
+            margin-top: 100px;
+            transition: .5s;
+            opacity: 1;
+        }
+
+    .box .image {
+        height: 100%;
+        width: 200px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+        .box .image img {
+            height: 100%;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+
+
+    .box .info {
+        width: 250px;
+        padding: 10px 10px 0px 10px;
+        height: 100%;
+        border-left: 1px solid #48E0E4;
+    }
+
+        .box .info .name h3 {
+            font-size: 30px;
+            color: var(--black);
+            text-transform: capitalize;
+        }
+
+        .box .info .name p {
+            margin-top: 20px;
+            font-size: 15px;
+            color: gray;
+            margin-bottom: 100px;
+        }
+
+        .box .info .name .price {
+            color: var(--pink);
+            font-size: 2rem;
+        }
+
+        .box .info .subInfo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+            .box .info .subInfo .btn {
+                font-size: 20px;
+                width: 200px;
+                background-color: var(--bluedark);
+                color: var(--black);
+                letter-spacing: 0;
+            }

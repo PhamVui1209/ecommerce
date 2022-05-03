@@ -1,0 +1,195 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.container {
+    width: 750px;
+    height: 450px;
+    background: linear-gradient(135deg, #e968be, #579ef3);
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-left: 10%;
+    padding: 20px 20px;
+    float: left;
+    animation: cnt 1s forwards;
+}
+@keyframes cnt {
+    0% {
+        transform: scale(0.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.btnRight {
+    width: 150px;
+    border-radius: 10px;
+    height: 30px;
+    color: white;
+    background-color: deeppink;
+    border: 1px solid deeppink;
+}
+
+.imgsp {
+    display: inline-block;
+    width: 40%;
+    border-radius: 10px;
+    height: 95%;
+    margin-top: 25px;
+}
+
+    .imgsp img {
+        width: 100%;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .imgsp img:hover {
+        transform: skewY(-10deg);
+        transition: 1s;
+    }
+/*@keyframes img {
+    0% {
+        transform: skewY(-10deg);
+    }
+
+    100% {
+        transform: skewY(10deg);
+    }
+}*/
+.infosp {
+    float: right;
+    width: 50%;
+    height: 95%
+}
+
+.tb {
+    width: 100%;
+    height: 90%;
+}
+
+.trong {
+    width: 100%;
+    height: 190px;
+}
+
+.container tr {
+    margin-bottom: 20px;
+}
+
+.dtl2 {
+    float: right;
+    width: 300px;
+    height: 150px;
+    margin-right: 150px;
+    margin-top: -540px;
+}
+
+.td {
+    float: right;
+    font-size: 50px;
+    color: black;
+    margin-right: 150px;
+    margin-top: -590px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 5px;
+    animation: td 1.2s infinite;
+}
+@keyframes td {
+    0% {
+        color: black;
+        transform: scale(.5);
+    }
+    50%{
+        color: blue;
+    }
+    100% {
+        color: red;
+        transform: scale(1);
+    }
+}
+.itemsp {
+    border: 1px solid var(--bluedark);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem 2rem;
+    width: 200px;
+    border-radius: 10px;
+}
+
+    .itemsp .image {
+        height: 12rem;
+        padding: 0px 0px;
+        text-align: center;
+    }
+
+        .itemsp .image img {
+            height: 100%;
+            background-size: cover;
+            width: 100%;
+        }
+
+    .itemsp .info h3 {
+        padding: 1rem;
+        font-size: 20px;
+        color: var(--black);
+        text-transform: capitalize;
+        background-color: var(--blue);
+    }
+
+    .itemsp .info .subInfo {
+        background-color: var(--bluedark);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        border-top: .1rem solid rgba(0,0,0,.3);
+    }
+
+        .itemsp .info .subInfo .price {
+            color: var(--pink);
+            font-size: 1rem;
+        }
+
+        .itemsp .info .subInfo .stars i {
+            color: yellow;
+            font-size: 1rem;
+        }
+
+    .itemsp .overlay {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        height: 12rem;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.568);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s;
+    }
+
+    .itemsp:hover .overlay {
+        top: 0;
+        opacity: 1;
+    }
+
+    .itemsp .overlay a {
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 15px 15px;
+        background: var(--blue);
+        color: #666;
+        margin: 1rem;
+        transform: translateY(-15rem);
+        transition-delay: calc(.1s * var(--i));
+    }
+
+    .itemsp:hover .overlay a {
+        transform: translateY(0rem);
+    }
+
+    .itemsp .overlay a:hover {
+        color: var(--pink);
+        transform: scale(1.2);
+        transition: .3s;
+    }

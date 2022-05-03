@@ -1,0 +1,138 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script&family=Monoton&display=swap');
+
+
+.popup {
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: 100000;
+}
+
+.closepopup {
+    float: right;
+    margin-right: -5%;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -5%;
+}
+
+.hinhpopup {
+    width: 80%;
+    margin-top: 0%;
+}
+
+.hienpopup {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup .load {
+    text-align: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    padding-top: 50px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #84a3d5, #e0e8f1,#cc77c8);
+}
+
+.popup .logo {
+    background-color: black;
+    margin-left: 150px;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.popup .load .test {
+    /* width: 110px; */
+    height: 80px;
+    color: var(--pink);
+    /* background-color: blanchedalmond; */
+}
+
+.popup .test .vt {
+    /* text-align: center; */
+    font-family: 'Alex Brush', cursive;
+    font-weight: bold;
+    height: 60px;
+    letter-spacing: -5px;
+    /*padding-left: -15px;*/
+    margin-bottom: 10px;
+}
+
+    .popup .test .vt h3 {
+        font-size: 70px;
+        margin-top: 10px;
+    }
+
+.popup .test .fashion {
+    width: 100px;
+    /* margin-top: -11px; */
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Monoton', cursive;
+    font-size: 10px;
+}
+
+    .popup .test .fashion h3 {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+.popup h2 {
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.itemph {
+    text-align: center;
+    border: 1px solid var(--bluedark);
+    padding: 2rem;
+    width: 300px;
+    margin-left: 10px;
+    /* margin: 20px; */
+}
+
+
+    .itemph p {
+        color: gray;
+        margin-bottom: 10px;
+    }
+
+    .itemph .user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .itemph .user .img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 5px;
+        }
+
+            .itemph .user .img img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+        .itemph .user .text h3 {
+            color: var(--pink);
+        }
+
+.dtlph{
+    margin-top: 50px;
+}
